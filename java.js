@@ -1,5 +1,7 @@
 window.onscroll = function() {myFunction()};
 
+
+
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 var text = document.getElementById("im");
@@ -17,12 +19,8 @@ text.innerHTML = list[0]
 var bee_img = document.getElementById("hover-bee");
 var bee_list_img = ["bee_far.jpg","bee_close.jpg"];
 var increment = 0;
-
+//Image Card Function Animation
 function changeImage(){
-  console.log(bee_list_img[increment]);
-  console.log(bee_list_img.length);
-  console.log(increment);
-
 
   bee_img.setAttribute("src","img/"+ bee_list_img[increment]);
   increment++;
@@ -30,24 +28,25 @@ function changeImage(){
     increment = 0;
   }
 }
-var load =document.getElementById("load");
-function loading(){
 
-  load.setAttribute('class','spinner-grow');
-}
-function removeLoading(){
-  load.removeAttribute('class','spinner-grow');1
+/* Find position of element*/
+var home = document.getElementById('nav-h');
+var span = document.getElementById('span');
+function position(){
+  span.style.left= home.offsetLeft + "px";
+  span.style.width= home.offsetWidth+"px";
 }
 
-/* Navigation bar*/
+/* Navigation bar scroll stick*/
 function myFunction() {
+  position();
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
+  
 }
-
 
 // This function deals with the triggering event and timeout innerHTML for page1
 var titleChange = function changeTitle() {

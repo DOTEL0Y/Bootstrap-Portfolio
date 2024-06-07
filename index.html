@@ -28,13 +28,23 @@
   <body class="color">
     <header class="navbar row">
       <nav id="navbar">
-        <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Projects</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">About Me</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="nav-h" onmouseenter="homeMouseStay();"
+          >Home</a
+        >
+        <a href="http://" target="_blank" rel="noopener noreferrer" id="nav-p" onmouseenter="projectMouse();"
+          >Projects</a
+        >
+        <a href="http://" target="_blank" rel="noopener noreferrer" id="nav-a" onmouseenter="aboutMouse();"
+          >About Me</a
+        >
+        <a href="http://" target="_blank" rel="noopener noreferrer" id="nav-c" onmouseenter="contactMouse();"
           >Contact Me</a
         >
-        <span></span>
+        <span id="span"></span>
         <img
           src="img/Oscary-dancing-script.brand.PNG"
           alt="Oscary"
@@ -47,7 +57,7 @@
         <img
           src="img/linked_profile.jpg"
           alt=""
-          class="shadow-lg img-fluid col-lg-2 mt-5 mb-4 mx-auto my-3"
+          class="shadow-lg img-fluid col-lg-2 mt-5 mb-4 mx-auto my-3 user-select-none"
           style="border-radius: 40rem"
         />
       </div>
@@ -63,12 +73,14 @@
           intuitive apps to communicate key insights achieved utilizing Data
           science and Data engineering.
         </p>
-        <p id="im"></p>
+        <p id="im" class="user-select-none"></p>
         <div class="bttn overflow:hidden;">
           <a href="lvl1/project.html" target="_self" rel="noopener noreferrer"
-            >Hire Me</a>
-          ><a href="lvl1/contact.html" target="_self" rel="noopener noreferrer"
-            >Contact</a>
+            >Hire Me</a
+          >
+          <a href="lvl1/contact.html" target="_self" rel="noopener noreferrer"
+            >Contact</a
+          >
         </div>
       </div>
     </section>
@@ -108,18 +120,20 @@
           </div>
 
           <div class="card-footer">
-            <p class="user-select-none">Timeline:2023-2024</p> 
-            <button
-              class="btn btn-sm btn-outline-primary"
-              style="
-                position: relative;
-                margin-left: 100px;
-                margin-bottom: 10px;
-              "
-              onclick="window.location.href='https://github.com/DOTEL0Y/Scikit-Portforlio-Cuticular-Hydrocarbon';"
-            >
-              View Project
-            </button>
+            <div class="user-select-none">
+              Timeline:2023-2024
+              <button
+                class="btn btn-sm btn-outline-primary"
+                style="
+                  position: relative;
+                  margin-left: 100px;
+                  margin-bottom: 10px;
+                "
+                onclick="window.location.href='https://github.com/DOTEL0Y/Scikit-Portforlio-Cuticular-Hydrocarbon';"
+              >
+                View Project
+              </button>
+            </div>
           </div>
         </div>
         <!--Card#1 End-->
@@ -224,6 +238,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="bootstrap.bundle.min.js / bootstrap.bundle.js "></script>
+
+    <!--Personal Scripts Start-->
+    <script src="scripts/navbar.js"></script>
     <script src="java.js"></script>
+    <!--Personal Scripts End-->
   </body>
 </html>

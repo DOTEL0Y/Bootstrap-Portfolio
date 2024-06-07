@@ -112,7 +112,6 @@ section:nth-child(even){
     position: absolute;
     top: 0;
     width: 100px;
-    left:32.5%;
     height: 100%;
     border-radius: 8px;
     background:linear-gradient(45deg,orange,red);
@@ -122,72 +121,28 @@ section:nth-child(even){
     opacity: 1;
     mix-blend-mode: difference;
     background:linear-gradient(45deg,orange,red);
-    width: 100px;
-    left:32.5%;
+
 }
 .navbar a:nth-child(2):hover~span {
     opacity: 1;
     color: azure;
     mix-blend-mode: difference;  
     background:linear-gradient(45deg,orange,red);
-    width: 132px;
-    left: 39%;
+
 }
 .navbar a:nth-child(3):hover~span {
     opacity: 1;
     mix-blend-mode: difference;
     background:linear-gradient(45deg,orange,red);
-    left: 48.5%;
-    width: 139px;
+
 }
 .navbar a:nth-child(4):hover~span {
     opacity: 1;
     mix-blend-mode: difference;
     background:linear-gradient(45deg,orange,red);
-    left: 58%;
-    width: 165px;
+
 }
-/* .navbar span{
-    z-index: -1;
-    opacity: .2;
-    position: absolute;
-    top: 0;
-    left: .3vw;
-    width: 100px;
-    height: 100%;
-    border-radius: 8px;
-    background:linear-gradient(45deg,orange,red);
-    transition: 1s ease;
-}
-.navbar a:nth-child(1):hover~span {
-    opacity: 1;
-    mix-blend-mode: difference;
-    background:linear-gradient(45deg,orange,red);
-    width: 100px;
-    left: .3vw;
-}
-.navbar a:nth-child(2):hover~span {
-    opacity: 1;
-    color: azure;
-    mix-blend-mode: difference;  
-    background:linear-gradient(45deg,orange,red);
-    width: 132px;
-    left: 130px;
-}
-.navbar a:nth-child(3):hover~span {
-    opacity: 1;
-    mix-blend-mode: difference;
-    background:linear-gradient(45deg,orange,red);
-    width: 139px;
-    left: 300px;
-}
-.navbar a:nth-child(4):hover~span {
-    opacity: 1;
-    mix-blend-mode: difference;
-    background:linear-gradient(45deg,orange,red);
-    width: 165px;
-    left: 480px;
-} */
+
 .sticky {
     position:fixed;
     top: 0;
