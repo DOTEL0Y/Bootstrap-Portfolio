@@ -64,13 +64,11 @@
           science and Data engineering.
         </p>
         <p id="im"></p>
-        <div class="bttn">
+        <div class="bttn overflow:hidden;">
           <a href="lvl1/project.html" target="_self" rel="noopener noreferrer"
-            >Hire Me</a
-          >
-          <a href="lvl1/contact.html" target="_self" rel="noopener noreferrer"
-            >Contact</a
-          >
+            >Hire Me</a>
+          ><a href="lvl1/contact.html" target="_self" rel="noopener noreferrer"
+            >Contact</a>
         </div>
       </div>
     </section>
@@ -108,19 +106,21 @@
               training model
             </p>
           </div>
-          <button
-            class="btn btn-outline-primary"
-            style="
-              position: relative;
-              width: 50%;
-              left: 25%;
-              margin-bottom: 10px;
-            "
-            onclick="window.location.href='https://github.com/DOTEL0Y/Scikit-Portforlio-Cuticular-Hydrocarbon';"
-          >
-            View Project
-          </button>
-          <div class="card-footer">Timeline:2023-2024</div>
+
+          <div class="card-footer">
+            <p class="user-select-none">Timeline:2023-2024</p> 
+            <button
+              class="btn btn-sm btn-outline-primary"
+              style="
+                position: relative;
+                margin-left: 100px;
+                margin-bottom: 10px;
+              "
+              onclick="window.location.href='https://github.com/DOTEL0Y/Scikit-Portforlio-Cuticular-Hydrocarbon';"
+            >
+              View Project
+            </button>
+          </div>
         </div>
         <!--Card#1 End-->
 
@@ -148,20 +148,22 @@
               Data Analysis techniques to investigate key properties of
               variables that influence daily volume of MFST purchases.
             </p>
-            <button
-            class="btn btn-outline-primary"
-            style="
-              position: relative;
-              width: 50%;
-              left: 25%;
-              margin-bottom: 10px;
-            "
-            onclick="window.location.href='https://github.com/DOTEL0Y/Stock-Market-Analysis';"
-          >
-            View Project
-          </button>
           </div>
-          <div class="card-footer">Timeline:2024-present</div>
+          <div class="card-footer">
+            Timeline:2024-present
+            <button
+              class="btn btn-sm btn-outline-primary"
+              style="
+                position: relative;
+
+                margin-bottom: 10px;
+                margin-left: 100px;
+              "
+              onclick="window.location.href='https://github.com/DOTEL0Y/Stock-Market-Analysis';"
+            >
+              View Project
+            </button>
+          </div>
         </div>
         <!--Card#2 End-->
 
@@ -178,6 +180,12 @@
           </div>
           <div class="card-body">
             <h4 class="card-title pd-5">Website Scraping Phrase Analysis</h4>
+            <img
+              src="./img/scrapy-python.jpg"
+              alt=""
+              class="card-top-img img-fluid rounded align-self-center"
+              id="blur-img"
+            />
             <p class="card-text pt-5">
               INPROGRESS <br />Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Laborum quisquam doloribus provident
@@ -186,7 +194,25 @@
               perferendis inventore.
             </p>
           </div>
-          <div class="card-footer">Timeline:2024-present</div>
+          <div class="card-footer">
+            Timeline:2024-present
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary"
+              style="
+                position: relative;
+
+                margin-bottom: 10px;
+                margin-left: 100px;
+              "
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Tooltip on bottom"
+              onclick="window.location.href='https://github.com/DOTEL0Y/Scrapy_bookstore';"
+            >
+              View Project
+            </button>
+          </div>
         </div>
         <!--Card#3 End-->
       </article>
@@ -197,6 +223,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="bootstrap.bundle.min.js / bootstrap.bundle.js "></script>
     <script src="java.js"></script>
   </body>
 </html>

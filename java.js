@@ -12,6 +12,8 @@ var e = dse.innerHTML
 list = [e+"-Data Scientist-" +"&#128202;", e+"-Fullstack Developer-" +"&#128241;", e+"-Software Engineer-"+"&#128187;"];
 text.innerHTML = list[0]
 
+
+/* Image Card Animation*/
 var bee_img = document.getElementById("hover-bee");
 var bee_list_img = ["bee_far.jpg","bee_close.jpg"];
 var increment = 0;
@@ -28,7 +30,16 @@ function changeImage(){
     increment = 0;
   }
 }
+var load =document.getElementById("load");
+function loading(){
 
+  load.setAttribute('class','spinner-grow');
+}
+function removeLoading(){
+  load.removeAttribute('class','spinner-grow');1
+}
+
+/* Navigation bar*/
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
