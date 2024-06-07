@@ -199,9 +199,9 @@ section:nth-child(even){
   }
 
 /* ID List*/
-/* #page1{
+#page1{
 
-} */
+}
 #page1 a{
     text-decoration: none;
     font-size: 1.5rem;
@@ -219,6 +219,30 @@ section:nth-child(even){
     font-family: Dancing Script;
     text-align: center;
 }
+#hover-bee{
+    -webkit-filter:blur(5px);
+    filter:blur(5px);
+    transition: .2s;
+}
+#hover-bee:hover{
+    transition: .2s;
+    -webkit-filter:blur(0px);
+    filter:blur(0px);
+}
+#blur-img{
+    -webkit-filter:blur(5px);
+    filter:blur(5px);
+    transition: .2s;
+}
+#blur-img:hover{
+    transition: .2s;
+    -webkit-filter:blur(0px);
+    filter:blur(0px);
+}
+
+
+/*Sass Variables*/
+
 /* Keyframes*/
 
     /*Color Keyframe*/
